@@ -72,7 +72,7 @@ const products = {
         this.customerMoney = Number(custMoneyStr);
         // console.log('ввели', this.customerMoney)
         
-    }while(this.customerMoney<this.totalPrice)
+    }while(this.customerMoney<this.totalPrice||isNaN(this.customerMoney))
     return this.customerMoney
     }
     this.countChange = function(){
